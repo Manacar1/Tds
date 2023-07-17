@@ -48,8 +48,8 @@
   min-height: 50vh;
 }
 
-
-.intro-text-content, .intro-img {
+.intro-text-content,
+.intro-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -60,22 +60,35 @@
   max-width: 100%;
   height: auto;
 }
+
 .intro-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50rem;
-  
   overflow: hidden;
   border-radius: 90%;
 }
 
 .intro-img {
-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .intro-img:hover {
-transform: translate(-1%, 1%) scale(0.8);
+  transform: translate(-1%, 1%) scale(0.8);
+}
+
+/* Ajuste de layout para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  .intro-content {
+    grid-template-columns: 1fr; /* Altera para uma única coluna em dispositivos móveis */
+    min-height: auto; /* Remove a altura mínima para que o conteúdo se ajuste dinamicamente */
+  }
+
+  .intro-img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar a largura total da coluna */
+    border-radius: 90; 
+  }
 }
 
 
