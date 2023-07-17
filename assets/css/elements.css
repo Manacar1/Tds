@@ -5,16 +5,28 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 65.5%; /* Tamanho da fonte base para desktop */
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem; /* Tamanho da fonte padrão para desktop */
   color: var(--primary-color);
   line-height: 1.5;
 }
+
+/* Ajuste de tamanho de fonte para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 55.5%; /* Reduz o tamanho da fonte para 50% da fonte base em dispositivos móveis */
+  }
+
+  body {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte padrão para dispositivos móveis */
+  }
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
