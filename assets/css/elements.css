@@ -7,6 +7,8 @@
 html {
   font-size: 65.5%; /* Tamanho da fonte base para desktop */
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Adicione esta linha */
+
 }
 
 body {
@@ -14,7 +16,9 @@ body {
   font-size: 2.5rem; /* Tamanho da fonte padrão para desktop */
   color: var(--primary-color);
   line-height: 1.5;
+  background-size: cover;
 }
+
 
 /* Ajuste de tamanho de fonte para dispositivos móveis */
 @media only screen and (max-width: 600px) {
