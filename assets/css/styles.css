@@ -1,9 +1,37 @@
+@media only screen and (max-width: 600px){
+
+
+  .float{
+    position: fixed;
+      width: 5rem;
+      height: 5rem;
+      bottom: 80px;
+      right: 22px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+  
+  }
+  
+  .my-float{
+    margin-top:13px;
+  }
+
+
+
+}
+
+
 .float{
-	position: fixed;
-    width: 41px;
-    height: 41px;
+  position: fixed;
+    width: 5rem;
+    height: 5rem;
     bottom: 80px;
-    right: 25px;
+    right: 22px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -15,8 +43,9 @@
 }
 
 .my-float{
-	margin-top:6px;
+  margin-top:13px;
 }
+
 
 .map-responsive{
 
